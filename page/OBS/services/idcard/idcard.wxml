@@ -1,0 +1,20 @@
+<view class="page">
+    <form class="page__bd" catchsubmit="formSubmit" catchreset="formReset">
+        <view class="section">
+            <view class="section__title">输入身份证号码：</view>
+            <input maxlength="18" name="input" placeholder="请在此输入身份证号码" />
+        </view>
+        <view class="btn-area">
+            <button formType="submit">提交</button>
+            <button formType="reset">重置</button>
+        </view>
+    </form>
+
+    <view class="body-view">
+        <view>{{idcardInfo}}</view>
+        <view class="body-text">地址:{{idcardContent.address}}</view>
+        <view class="body-text">生日:{{idcardContent.birthday}}</view>
+        <view class="body-text">性别:{{idcardContent.sex}}</view>
+    </view>
+
+</view>

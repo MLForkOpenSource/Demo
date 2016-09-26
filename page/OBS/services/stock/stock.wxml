@@ -1,0 +1,35 @@
+<view class="page">
+    <form class="page__bd" catchsubmit="formSubmit" catchreset="formReset">
+        <view class="section">
+            <view class="section__title">地区选择器</view>
+            <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                <view class="picker">
+                当前选择：{{array[index]}}
+                </view>
+            </picker>
+        </view>
+        <view class="section">
+            <view class="section__title">输入股票代码：</view>
+            <input maxlength="200" name="input" placeholder="请在此输入股票代码" />
+        </view>
+        <!--<view class="section">
+            <text class="section__title">设置多支股票值</text>
+            <view class="body-view">
+                <slider value="0" bindchange="slider4change" min="0" max="1" show-value/>
+            </view>
+        </view>-->
+        <view class="btn-area">
+            <button formType="submit">提交</button>
+            <button formType="reset">重置</button>
+        </view>
+    </form>
+
+    <view class="body-view">
+        <view>{{stockResult}}</view>
+        <view class="body-text">
+            <view wx:for="{{stockContent.stockinfo}}"> 
+                {{item.code}}----{{item.name}}
+            </view>
+        </view>
+    </view>
+</view>

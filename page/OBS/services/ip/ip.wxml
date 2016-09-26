@@ -1,0 +1,24 @@
+<view class="page">
+    <form class="page__bd" catchsubmit="formSubmit" catchreset="formReset">
+        <view class="section">
+            <view class="section__title">输入IP地址：</view>
+            <input maxlength="16" name="input" placeholder="请在此输入IP地址" />
+        </view>
+        <view class="btn-area">
+            <button formType="submit">提交</button>
+            <button formType="reset">重置</button>
+        </view>
+    </form>
+
+    <view class="body-view">
+        <view>{{ipResult}}</view>
+        <view class="body-text">
+            <view>IP地址：{{ipContent.ip}}</view>
+            <view>国家：{{ipContent.country}}</view>
+            <view>省份：{{ipContent.province}}</view>
+            <view>城市：{{ipContent.city}}</view>
+            <view>地区：{{ipContent.district}}</view>
+            <view>运营商：{{ipContent.carrier}}</view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,16 @@
+wx-button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+wx-label {
+  display: block;
+  margin-top: 5px;
+}
+.picker-text {
+  margin-left: 10px;
+  position: relative;
+}
+
+.body-view{padding-left:20px;}
+.body-view view{padding:5px 0;}
+.body-text{color:#3a96ff;}

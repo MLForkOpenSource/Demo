@@ -1,0 +1,61 @@
+<view class="index">
+    <view class="head">
+        <view class="title">商学院</view>
+        <view class="desc">这是展示商学院的DEMO。</view>
+    </view>
+
+    <view class="body">
+        <view class="widgets">
+            <view class="widgets__item">
+                <view id="main" class="widgets__info {{mainShow ? 'widgets__info_show' : ''}}" bindtap="widgetsToggle">
+                    <text class="widgets__info-name">商学院分区</text>
+                    <image class="widgets__info-img" src="resources/kind/view.png" background-size="cover" />
+                </view>
+                <view class="widgets__list {{mainShow ? 'widgets__list_show' : ''}}">
+                    <navigator url="pages/index/index" class="widget">
+                        <text class="widget__name">主页</text>
+                        <image class="widget__arrow" src="resources/arrow.png" background-size="cover" />
+                        <view class="widget__line"></view>
+                    </navigator>
+                    <navigator url="component-pages/wx-scroll-view/wx-scroll-view" class="widget">
+                        <text class="widget__name">scroll-view</text>
+                        <image class="widget__arrow" src="resources/arrow.png" background-size="cover" />
+                        <view class="widget__line"></view>
+                    </navigator>
+                    <navigator url="component-pages/wx-swiper/wx-swiper" class="widget">
+                        <text class="widget__name">swiper</text>
+                        <image class="widget__arrow" src="resources/arrow.png" background-size="cover" />
+                    </navigator>
+                </view>
+            </view>
+            <view class="widgets__item">
+                <view id="service" class="widgets__info {{serviceShow ? 'widgets__info_show' : ''}}" bindtap="widgetsToggle">
+                    <text class="widgets__info-name">服务分区</text>
+                    <image class="widgets__info-img" src="resources/kind/view.png" background-size="cover" />
+                </view>
+                <view class="widgets__list {{serviceShow ? 'widgets__list_show' : ''}}">
+                    <navigator url="services/telphone/phone" class="widget">
+                        <text class="widget__name">手机号码查询</text>
+                        <image class="widget__arrow" src="resources/arrow.png" background-size="cover" />
+                        <view class="widget__line"></view>
+                    </navigator>
+                    <navigator url="services/idcard/idcard" class="widget">
+                        <text class="widget__name">身份证号查询</text>
+                        <image class="widget__arrow" src="resources/arrow.png" background-size="cover" />
+                        <view class="widget__line"></view>
+                    </navigator>
+                    <navigator url="services/stock/stock" class="widget">
+                        <text class="widget__name">股票查询</text>
+                        <image class="widget__arrow" src="resources/arrow.png" background-size="cover" />
+                        <view class="widget__line"></view>
+                    </navigator>
+                    <navigator url="services/ip/ip" class="widget">
+                        <text class="widget__name">IP地址查询</text>
+                        <image class="widget__arrow" src="resources/arrow.png" background-size="cover" />
+                        <view class="widget__line"></view>
+                    </navigator>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

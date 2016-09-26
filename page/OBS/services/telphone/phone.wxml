@@ -1,0 +1,22 @@
+<view class="page">
+    <form class="page__bd" catchsubmit="formSubmit" catchreset="formReset">
+        <view class="section">
+            <view class="section__title">输入电话号码：</view>
+            <input maxlength="13" name="input" placeholder="请在此输入电话号码" />
+        </view>
+        <view class="btn-area">
+            <button formType="submit">提交</button>
+            <button formType="reset">重置</button>
+        </view>
+    </form>
+
+    <view class="body-view">
+        <view>{{telResult}}</view>
+        <view>省份:{{telContent.province}}</view>
+        <view>城市:{{telContent.city}}</view>
+        <view>供应商:{{telContent.supplier}}</view>
+        <view>卡类:{{telContent.suit}}</view>
+        <view>前缀:{{telContent.prefix}}</view>
+        <view>电话:{{telContent.phone}}</view>
+    </view>
+</view>

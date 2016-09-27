@@ -1,0 +1,42 @@
+<view class="page">
+    <form class="page__bd" catchsubmit="formSubmit" catchreset="formReset">
+        <view class="section">
+            <view class="section__title">地区选择器</view>
+            <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                <view class="picker">
+                当前选择：{{array[index]}}
+                </view>
+            </picker>
+        </view>
+        <view class="section">
+            <view class="section__title">输入城市{{array[index]}}：</view>
+            <input maxlength="16" name="input" placeholder="请在此输入城市{{array[index]}}" />
+        </view>
+        <view class="btn-area">
+            <button formType="submit">提交</button>
+            <button formType="reset">重置</button>
+        </view>
+    </form>
+
+    <view class="body-view">
+        <view>{{weatherResult}}</view>
+        <view class="body-text">
+            <view>城市：{{weatherContent.city}}</view>
+            <view>拼音：{{weatherContent.pinyin}}</view>
+            <view>代码：{{weatherContent.citycode}}</view>
+            <view>日期：{{weatherContent.date}}</view>
+            <view>发布时间：{{weatherContent.time}}</view>
+            <view>邮编：{{weatherContent.postCode}}</view>
+            <view>经度：{{weatherContent.longitude}}</view>
+            <view>纬度：{{weatherContent.latitude}}</view>
+            <view>海拔：{{weatherContent.altitude}}</view>
+            <view>天气：{{weatherContent.weather}}</view>
+            <view>最低气温：{{weatherContent.l_tmp}}</view>
+            <view>最高气温：{{weatherContent.h_tmp}}</view>
+            <view>风向：{{weatherContent.WD}}</view>
+            <view>风力：{{weatherContent.WS}}</view>
+            <view>日出时间：{{weatherContent.sunrise}}</view>
+            <view>日落时间：{{weatherContent.sunset}}</view>
+        </view>
+    </view>
+</view>

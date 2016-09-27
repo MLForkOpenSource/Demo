@@ -54,6 +54,11 @@
                         <image class="widget__arrow" src="resources/arrow.png" background-size="cover" />
                         <view class="widget__line"></view>
                     </navigator>
+                    <navigator url="services/weather/weather" class="widget">
+                        <text class="widget__name">天气查询</text>
+                        <image class="widget__arrow" src="resources/arrow.png" background-size="cover" />
+                        <view class="widget__line"></view>
+                    </navigator>
                 </view>
             </view>
         </view>

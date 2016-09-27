@@ -3,7 +3,7 @@ var ipUrl = 'http://apis.baidu.com/apistore/iplookupservice/iplookup'
 Page({
   data: {
     ipResult: initdata,
-    ipContent:{}         //股票返回的内容
+    ipContent:{}         //IP地址返回的内容
   },
   formSubmit: function(e) {
     console.log('form发生了submit事件，携带数据为：', e.detail.value)

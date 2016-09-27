@@ -8,6 +8,7 @@
       "page/OBS/services/stock/stock",
       "page/OBS/services/ip/ip",
       "page/OBS/services/weather/weather",
+      "page/OBS/services/city/city",
 
       "page/component/index",
       "page/component/navigation-pages/controller/controller",

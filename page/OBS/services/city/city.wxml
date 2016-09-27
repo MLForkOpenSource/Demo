@@ -1,0 +1,40 @@
+<view class="page">
+    <form class="page__bd" catchsubmit="formSubmit" catchreset="formReset">
+        <view class="section">
+            <view class="section__title">条件选择器</view>
+            <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                <view class="picker">
+                    当前选择：{{array[index]}}
+                </view>
+            </picker>
+        </view>
+        <view class="section">
+            <view class="section__title">输入城市信息：</view>
+            <input maxlength="16" name="input" placeholder="请在此输入城市信息" />
+        </view>
+        <view class="btn-area">
+            <button formType="submit">提交</button>
+            <button formType="reset">重置</button>
+        </view>
+    </form>
+
+    <view class="body-view">
+        <view>{{cityResult}}</view>
+        <!--<view class="body-text">
+            <view>城市：{{cityContent.cityName}}</view>
+            <view>省份：{{cityContent.provinceName}}</view>
+            <view>代码：{{cityContent.cityCode}}</view>
+            <view>邮编：{{cityContent.zipCode}}</view>
+            <view>区号：{{cityContent.telAreaCode}}</view>
+        </view>-->
+        <view class="body-text">
+            <view wx:for="{{cityContent.retData}}">
+                <view>城市：{{item.cityName}}</view>
+                <view>省份：{{item.provinceName}}</view>
+                <view>代码：{{item.cityCode}}</view>
+                <view>邮编：{{item.zipCode}}</view>
+                <view>区号：{{item.telAreaCode}}</view>
+            </view>
+        </view>
+    </view>
+</view>

@@ -15,9 +15,6 @@ wx-label {
 .body-view view{padding:5px 0;}
 .body-text{color:#3a96ff;}
 
-.hidden{display:none}
-.show{display:block}
-
 .area_picker{margin-bottom: 10px;}
 .area_picker,.area_picker picker{padding-left:20px;}
 .picker{padding-left:15px;}

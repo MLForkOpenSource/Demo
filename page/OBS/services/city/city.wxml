@@ -20,20 +20,22 @@
 
     <view class="body-view">
         <view>{{cityResult}}</view>
-        <!--<view class="body-text">
-            <view>城市：{{cityContent.cityName}}</view>
-            <view>省份：{{cityContent.provinceName}}</view>
-            <view>代码：{{cityContent.cityCode}}</view>
-            <view>邮编：{{cityContent.zipCode}}</view>
-            <view>区号：{{cityContent.telAreaCode}}</view>
-        </view>-->
-        <view class="body-text">
-            <view wx:for="{{cityContent.retData}}">
-                <view>城市：{{item.cityName}}</view>
-                <view>省份：{{item.provinceName}}</view>
-                <view>代码：{{item.cityCode}}</view>
-                <view>邮编：{{item.zipCode}}</view>
-                <view>区号：{{item.telAreaCode}}</view>
+        <view class="body-text {{cityAccurate}}">
+            <view>
+                <view>城市：{{cityContent.cityName}}</view>
+                <view>省份：{{cityContent.provinceName}}</view>
+                <view>代码：{{cityContent.cityCode}}</view>
+                <view>邮编：{{cityContent.zipCode}}</view>
+                <view>区号：{{cityContent.telAreaCode}}</view>
+            </view>
+        </view>
+        <view class="body-text {{cityVague}}">
+            <view wx:for="{{cityContent}}">
+                <view>省份：{{item.province_cn}}</view>
+                <view>城市：{{item.district_cn}}</view>
+                <view>区县：{{item.name_cn}}</view>
+                <view>拼音：{{item.name_en}}</view>
+                <view>代码：{{item.area_id}}</view>
             </view>
         </view>
     </view>

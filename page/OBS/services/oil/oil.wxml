@@ -1,0 +1,25 @@
+<view class="page">
+    <form class="page__bd" catchsubmit="formSubmit" catchreset="formReset">
+        <view class="section">
+            <view class="section__title">输入城市：</view>
+            <input maxlength="16" name="input" placeholder="请在此输入城市" />
+        </view>
+        <view class="btn-area">
+            <button formType="submit">提交</button>
+            <button formType="reset">重置</button>
+        </view>
+    </form>
+
+    <view class="body-view">
+        <view>{{oilResult}}</view>
+        <view class="body-text {{oilStatus}}">
+            <view>
+                <view>城市：{{oilContent.prov}}</view>
+                <view>0号油：{{oilContent.p0}}元/升</view>
+                <view>90号油：{{oilContent.p90}}元/升</view>
+                <view>93号油：{{oilContent.p93}}元/升</view>
+                <view>97号油：{{oilContent.p97}}元/升</view>
+            </view>
+        </view>
+    </view>
+</view> 

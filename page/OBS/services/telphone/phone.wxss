@@ -14,3 +14,6 @@ wx-label {
 .body-view{padding-left:20px;}
 .body-view view{padding:5px 0;}
 .body-text{color:#3a96ff;}
+
+.hidden{display:none}
+.show{display:block}

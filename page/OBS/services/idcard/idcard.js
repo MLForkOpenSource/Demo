@@ -1,6 +1,7 @@
 var initdata = '显示身份证信息：\n';
 Page({
   data: {
+    idcardStatus:'hidden',
     idcardInfo:initdata,
     idcardContent:{}
   },
@@ -19,7 +20,8 @@ Page({
         },
         success: function(res) {
             that.setData({
-                idcardContent:res.data.retData
+                idcardContent:res.data.retData,
+                idcardStatus: 'show'
             })
             that.update()
         }

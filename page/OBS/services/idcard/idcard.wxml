@@ -10,7 +10,7 @@
         </view>
     </form>
 
-    <view class="body-view">
+    <view class="body-view {{idcardStatus}}">
         <view>{{idcardInfo}}</view>
         <view class="body-text">地址:{{idcardContent.address}}</view>
         <view class="body-text">生日:{{idcardContent.birthday}}</view>

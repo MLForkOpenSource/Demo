@@ -10,9 +10,9 @@
         </view>
     </form>
 
-    <view class="body-view">
+    <view class="body-view {{oilStatus}}">
         <view>{{oilResult}}</view>
-        <view class="body-text {{oilStatus}}">
+        <view class="body-text">
             <view>
                 <view>城市：{{oilContent.prov}}</view>
                 <view>0号油：{{oilContent.p0}}元/升</view>

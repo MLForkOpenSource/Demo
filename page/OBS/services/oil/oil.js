@@ -21,8 +21,8 @@ Page({
             'apikey':'0379d60b4d898ec65feeb9b13f58943f'
         },
         success: function(res) {
-            console.log('res---->')
-            console.log(res.data)
+            // console.log('res---->')
+            // console.log(res.data)
             that.setData({
                 oilContent : res.data.showapi_res_body.list[0],
                 oilStatus: 'show'

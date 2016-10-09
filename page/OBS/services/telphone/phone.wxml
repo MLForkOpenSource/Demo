@@ -10,13 +10,15 @@
         </view>
     </form>
 
-    <view class="body-view">
+    <view class="body-view {{telStatus}}">
         <view>{{telResult}}</view>
-        <view>省份:{{telContent.province}}</view>
-        <view>城市:{{telContent.city}}</view>
-        <view>供应商:{{telContent.supplier}}</view>
-        <view>卡类:{{telContent.suit}}</view>
-        <view>前缀:{{telContent.prefix}}</view>
-        <view>电话:{{telContent.phone}}</view>
+        <view class="body-text">
+            <view>省份:{{telContent.province}}</view>
+            <view>城市:{{telContent.city}}</view>
+            <view>供应商:{{telContent.supplier}}</view>
+            <view>卡类:{{telContent.suit}}</view>
+            <view>前缀:{{telContent.prefix}}</view>
+            <view>电话:{{telContent.phone}}</view>
+        </view>
     </view>
 </view>

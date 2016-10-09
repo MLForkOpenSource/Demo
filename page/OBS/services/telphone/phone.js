@@ -1,6 +1,7 @@
 var initdata = '显示电话信息：\n';
 Page({
   data: {
+    telStatus:'hidden',
     telResult:initdata,
     telContent:{}
   },
@@ -20,7 +21,8 @@ Page({
         success: function(res) {
             console.log(res.data)
             that.setData({
-                telContent : res.data.retData
+                telContent : res.data.retData,
+                telStatus:'show'
             })
             that.update()
         }

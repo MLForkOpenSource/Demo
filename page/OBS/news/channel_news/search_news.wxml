@@ -1,0 +1,22 @@
+<view class="page">
+    <form class="page__bd" catchsubmit="formSubmit" catchreset="formReset">
+        <view class="section">
+            <!--<view class="section__title">输入银行卡号：</view>
+            <input maxlength="20" name="input" placeholder="请在此输入银行卡号" />-->
+        </view>
+        <view class="btn-area">
+            <button formType="submit">提交</button>
+            <!--<button formType="reset">重置</button>-->
+        </view>
+    </form>
+
+    <view class="body-view {{search_newsStatus}}">
+        <view>{{search_newsResult}}</view>
+        <view class="body-text">
+            <view wx:for="{{search_newsContent.pagebean}}">
+                <view>{{item.channelId}}</view>
+                <view>频道{{index}}---->{{item.name}}</view>
+            </view>
+        </view>
+    </view>
+</view>

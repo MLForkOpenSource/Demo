@@ -29,6 +29,24 @@
                 </view>
             </view>
             <view class="widgets__item">
+                <view id="news" class="widgets__info {{newsShow ? 'widgets__info_show' : ''}}" bindtap="widgetsToggle">
+                    <text class="widgets__info-name">新闻分区</text>
+                    <image class="widgets__info-img" src="resources/kind/view.png" background-size="cover" />
+                </view>
+                <view class="widgets__list {{newsShow ? 'widgets__list_show' : ''}}">
+                    <navigator url="news/channel_news/channel_news" class="widget">
+                        <text class="widget__name">新闻频道</text>
+                        <image class="widget__arrow" src="resources/arrow.png" background-size="cover" />
+                        <view class="widget__line"></view>
+                    </navigator>
+                    <navigator url="news/channel_news/search_news" class="widget">
+                        <text class="widget__name">新闻详情</text>
+                        <image class="widget__arrow" src="resources/arrow.png" background-size="cover" />
+                        <view class="widget__line"></view>
+                    </navigator>
+                </view>
+            </view>
+            <view class="widgets__item">
                 <view id="service" class="widgets__info {{serviceShow ? 'widgets__info_show' : ''}}" bindtap="widgetsToggle">
                     <text class="widgets__info-name">服务分区</text>
                     <image class="widgets__info-img" src="resources/kind/view.png" background-size="cover" />
@@ -41,6 +59,11 @@
                     </navigator>
                     <navigator url="services/idcard/idcard" class="widget">
                         <text class="widget__name">身份证号查询</text>
+                        <image class="widget__arrow" src="resources/arrow.png" background-size="cover" />
+                        <view class="widget__line"></view>
+                    </navigator>
+                    <navigator url="services/cardinfo/cardinfo" class="widget">
+                        <text class="widget__name">银行卡号查询</text>
                         <image class="widget__arrow" src="resources/arrow.png" background-size="cover" />
                         <view class="widget__line"></view>
                     </navigator>
@@ -76,6 +99,11 @@
                     </navigator>
                     <navigator url="services/turing/turing" class="widget">
                         <text class="widget__name">图灵机器人</text>
+                        <image class="widget__arrow" src="resources/arrow.png" background-size="cover" />
+                        <view class="widget__line"></view>
+                    </navigator>
+                    <navigator url="services/md5/md5" class="widget">
+                        <text class="widget__name">解密MD5</text>
                         <image class="widget__arrow" src="resources/arrow.png" background-size="cover" />
                         <view class="widget__line"></view>
                     </navigator>

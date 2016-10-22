@@ -1,0 +1,21 @@
+<view class="page">
+    <form class="page__bd" catchsubmit="formSubmit" catchreset="formReset">
+        <view class="section">
+            <view class="section__title">输入加密MD5：</view>
+            <input maxlength="64" name="input" placeholder="请在此输入加密MD5" />
+        </view>
+        <view class="btn-area">
+            <button formType="submit">提交</button>
+            <button formType="reset">重置</button>
+        </view>
+    </form>
+
+    <view class="body-view {{md5Status}}">
+        <view>{{md5Result}}</view>
+        <view class="body-text">
+            <view>加密串:</view>
+            <view>{{md5Content.md5}}</view>
+            <view>解密串:{{md5Content.md5_src}}</view>
+        </view>
+    </view>
+</view>

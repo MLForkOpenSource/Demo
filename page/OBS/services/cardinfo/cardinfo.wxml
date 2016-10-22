@@ -1,0 +1,24 @@
+<view class="page">
+    <form class="page__bd" catchsubmit="formSubmit" catchreset="formReset">
+        <view class="section">
+            <view class="section__title">输入银行卡号：</view>
+            <input maxlength="20" name="input" placeholder="请在此输入银行卡号" />
+        </view>
+        <view class="btn-area">
+            <button formType="submit">提交</button>
+            <button formType="reset">重置</button>
+        </view>
+    </form>
+
+    <view class="body-view {{cardinfoStatus}}">
+        <view>{{cardinfoResult}}</view>
+        <view class="body-text">
+            <view>卡类型:{{cardinfoContent.cardtype}}</view>
+            <view>卡长度:{{cardinfoContent.cardlength}}</view>
+            <view>卡前缀:{{cardinfoContent.cardprefixnum}}</view>
+            <view>卡名称:{{cardinfoContent.cardname}}</view>
+            <view>归属银行:{{cardinfoContent.bankname}}</view>
+            <view>结算代码:{{cardinfoContent.banknum}}</view>
+        </view>
+    </view>
+</view>
